@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Lance | Portfolio</title>
+
+  <!-- Bootstrap CSS -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+    crossorigin="anonymous"
+  />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#hero">Lance</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="projects.html">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#skills">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="hero" class="min-vh-100 d-flex align-items-center">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-7">
+          <p class="text-uppercase text-primary fw-semibold mb-2">Hello, I'm</p>
+          <h1 class="display-4 fw-bold mb-3">Lance <span class="text-primary">Montenegro</span></h1>
+          <h2 class="h4 text-muted mb-4">Graphic Designer</h2>
+          <p class="lead mb-4">
+            I am a Lance G. Montenegro dedicated to crafting impactful visual identities. Bridging the gap between art and functionality.
+          </p>
+          <div class="d-flex flex-wrap gap-3">
+            <a href="#projects" class="btn btn-primary btn-lg px-4">
+              View Projects
+            </a>
+            <a href="#contact" class="btn btn-outline-light btn-lg px-4">
+              Contact Me
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-5 text-center mt-5 mt-lg-0">
+          <div class="hero-avatar mx-auto hero-avatar-badge" id="heroAvatar" role="button" tabindex="0" aria-label="Click for a surprise">
+            <img src="assets/profile.jpg" alt="Portrait of Lance Montenegro" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-5 bg-light">
+    <div class="container">
+      <div class="row justify-content-center mb-4">
+        <div class="col-lg-8 text-center">
+          <h2 class="fw-bold mb-3">About Me</h2>
+          <p class="text-muted">
+            I’m a creative graphic designer dedicated to turning concepts into 
+            wearable art and digital assets. I focus on precision, color theory, 
+            and creating visual identities that teams and brands are proud to wear.
+          </p>
+        </div>
+      </div>
+      <div class="row gy-4">
+        <div class="col-md-6">
+          <h5 class="fw-semibold mb-3">Background</h5>
+          <p class="text-muted">
+            I am a visual designer with a focus on brand identity and apparel. 
+            I spent years honing my skills in Adobe Creative Suite, specifically 
+            in vector art and typography. My background is built on the belief that 
+            design should be functional as well as beautiful—bridging the gap between 
+            a digital concept and a tangible product that people are proud to wear.
+          </p>
+        </div>
+        <div class="col-md-6">
+          <h5 class="fw-semibold mb-3">What I Do</h5>
+          <ul class="list-unstyled text-muted mb-0">
+            <li class="mb-2">✔️ Full-Sublimation Jersey & Uniform Design</li>
+            <li class="mb-2">✔️ Corporate Merchandise (Lanyards, ID Systems)</li>
+            <li class="mb-2">✔️ Social Media Pubmats & Digital Marketing Assets</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Awards Section -->
+      <div class="awards-section mt-5 pt-4">
+        <h5 class="fw-semibold mb-4">Awards & Achievements</h5>
+        <div class="row g-4 align-items-center">
+          <div class="col-lg-6">
+            <div class="awards-cards">
+              <div class="award-card" data-bs-toggle="modal" data-bs-target="#awardModal" data-img="assets/awards/award-1.jpg">
+                <img src="assets/awards/award-1.jpg" alt="Award 1" loading="lazy" />
+                <span class="award-card-overlay">Click to view</span>
+              </div>
+              <div class="award-card" data-bs-toggle="modal" data-bs-target="#awardModal" data-img="assets/awards/award-2.jpg">
+                <img src="assets/awards/award-2.jpg" alt="Award 2" loading="lazy" />
+                <span class="award-card-overlay">Click to view</span>
+              </div>
+              <div class="award-card" data-bs-toggle="modal" data-bs-target="#awardModal" data-img="assets/awards/award-3.jpg">
+                <img src="assets/awards/award-3.jpg" alt="Award 3" loading="lazy" />
+                <span class="award-card-overlay">Click to view</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="award-photo-wrap">
+              <img src="assets/1cbe5796-7fe4-4bf7-ab11-9e828d15ffd9.jpg" alt="Lance Montenegro with awards and trophy" class="award-photo" loading="lazy" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Award Lightbox Modal -->
+  <div class="modal fade gallery-modal" id="awardModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Award</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body text-center p-0">
+          <img id="awardModalImg" src="" alt="Award" class="img-fluid rounded-bottom" style="max-height: 80vh; width: auto;" />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Projects Section -->
+  <section id="projects" class="py-5">
+    <div class="container">
+      <div class="row justify-content-center mb-4">
+        <div class="col-lg-8 text-center">
+          <h2 class="fw-bold mb-3">Projects</h2>
+          <p class="text-muted">
+            Here are some of the projects that showcase my skills.
+          </p>
+        </div>
+      </div>
+      <div class="row g-4">
+        <!-- Project Card 1 -->
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <img src="assets/Portfolio/pubmat/_Holiday 2025 FB post (6).jpg" class="card-img-top" alt="Social Media Pubmat preview" />
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Social Media Pubmat</h5>
+              <p class="card-text text-muted flex-grow-1">
+                Strategic visual content that communicates your message instantly. I design high-quality posters, banners, 
+                and social media cards that align with your brand identity and drive audience interaction.
+              </p>
+              <div class="mt-3">
+                <span class="badge text-bg-primary me-1 mb-1">Photoshop</span>
+                <span class="badge text-bg-warning me-1 mb-1">Illustrator</span>
+                <span class="badge text-bg-primary me-1 mb-1">Canva</span>
+              </div>
+            </div>
+            <div class="card-footer bg-transparent border-0 pt-0">
+              <button type="button" class="btn btn-sm btn-outline-primary me-2" data-bs-toggle="modal" data-bs-target="#pubmatGalleryModal">View Gallery</button>
+              <a href="projects.html#pubmat" class="btn btn-sm btn-outline-secondary">View Full Page</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project Card 2 -->
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <img src="assets/Portfolio/lanyard/ITCS LANYARD 3.jpg" class="card-img-top" alt="Lanyard design preview" />
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Lanyard</h5>
+              <p class="card-text text-muted flex-grow-1">
+                Turning functional accessories into visual assets. I create high-quality, seamless lanyard 
+                patterns that complement your overall brand aesthetic, perfect for enhancing team spirit or
+                 corporate visibility at conventions.
+              </p>
+              <div class="mt-3">
+                <span class="badge text-bg-primary me-1 mb-1">Photoshop</span>
+                <span class="badge text-bg-warning me-1 mb-1">Illustrator</span>
+              </div>
+            </div>
+            <div class="card-footer bg-transparent border-0 pt-0">
+              <button type="button" class="btn btn-sm btn-outline-primary me-2" data-bs-toggle="modal" data-bs-target="#lanyardGalleryModal">View Gallery</button>
+              <a href="projects.html#lanyard" class="btn btn-sm btn-outline-secondary">View Full Page</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project Card 3 -->
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <img src="assets/Portfolio/poloshirt/CORE.jpg" class="card-img-top" alt="Sublimation uniform preview" />
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Sublimation Uniforms</h5>
+              <p class="card-text text-muted flex-grow-1">
+                Wear your identity with pride. I design custom full-sublimation uniforms 
+                that combine dynamic patterns with brand precision, delivering high-performance 
+                jerseys and polos that unite teams and elevate organizations.
+              </p>
+              <div class="mt-3">
+                <span class="badge text-bg-primary me-1 mb-1">Photoshop</span>
+                <span class="badge text-bg-warning me-1 mb-1">Illustrator</span>
+              </div>
+            </div>
+            <div class="card-footer bg-transparent border-0 pt-0">
+              <button type="button" class="btn btn-sm btn-outline-primary me-2" data-bs-toggle="modal" data-bs-target="#uniformsGalleryModal">View Gallery</button>
+              <a href="projects.html#jersey" class="btn btn-sm btn-outline-secondary">View Full Page</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Modals -->
+  <!-- Pubmat Gallery Modal -->
+  <div class="modal fade gallery-modal" id="pubmatGalleryModal" tabindex="-1" aria-labelledby="pubmatGalleryModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="pubmatGalleryModalLabel">Social Media Pubmat — Gallery</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p class="text-muted mb-4">Strategic visual content that communicates your message instantly. Posters, banners, and social media cards that align with your brand identity.</p>
+          <div class="row g-3">
+            <div class="col-6 col-md-4 col-lg-3"><img src="assets/Portfolio/pubmat/_Holiday 2025 FB post (1).jpg" class="gallery-img img-fluid rounded" alt="Pubmat design" loading="lazy" /></div>
+            <div class="col-6 col-md-4 col-lg-3"><img src="assets/Portfolio/pubmat/_Holiday 2025 FB post (2).jpg" class="gallery-img img-fluid rounded" alt="Pubmat design" loading="lazy" /></div>
+            <div class="col-6 col-md-4 col-lg-3"><img src="assets/Portfolio/pubmat/_Holiday 2025 FB post (3).jpg" class="gallery-img img-fluid rounded" alt="Pubmat design" loading="lazy" /></div>
+            <div class="col-6 col-md-4 col-lg-3"><img src="assets/Portfolio/pubmat/_Holiday 2025 FB post (4).jpg" class="gallery-img img-fluid rounded" alt="Pubmat design" loading="lazy" /></div>
+            <div class="col-6 col-md-4 col-lg-3"><img src="assets/Portfolio/pubmat/_Holiday 2025 FB post (5).jpg" class="gallery-img img-fluid rounded" alt="Pubmat design" loading="lazy" /></div>
+            <div class="col-6 col-md-4 col-lg-3"><img src="assets/Portfolio/pubmat/_Holiday 2025 FB post (6).jpg" class="gallery-img img-fluid rounded" alt="Pubmat design" loading="lazy" /></div>
+            <div class="col-6 col-md-4 col-lg-3"><img src="assets/Portfolio/pubmat/_Holiday 2025 FB post (7).jpg" class="gallery-img img-fluid rounded" alt="Pubmat design" loading="lazy" /></div>
+            <div class="col-6 col-md-4 col-lg-3"><img src="assets/Portfolio/pubmat/_Holiday 2025 FB post.jpg" class="gallery-img img-fluid rounded" alt="Pubmat design" loading="lazy" /></div>
+            <div class="col-6 col-md-4 col-lg-3"><img src="assets/Portfolio/pubmat/12thcbit 5.jpg" class="gallery-img img-fluid rounded" alt="Pubmat design" loading="lazy" /></div>
+            <div class="col-6 col-md-4 col-lg-3"><img src="assets/Portfolio/pubmat/62.jpg" class="gallery-img img-fluid rounded" alt="Pubmat design" loading="lazy" /></div>
+            <div class="col-6 col-md-4 col-lg-3"><img src="assets/Portfolio/pubmat/63.jpg" class="gallery-img img-fluid rounded" alt="Pubmat design" loading="lazy" /></div>
+            <div class="col-6 col-md-4 col-lg-3"><img src="assets/Portfolio/pubmat/64.jpg" class="gallery-img img-fluid rounded" alt="Pubmat design" loading="lazy" /></div>
+            <div class="col-6 col-md-4 col-lg-3"><img src="assets/Portfolio/pubmat/65.jpg" class="gallery-img img-fluid rounded" alt="Pubmat design" loading="lazy" /></div>
+            <div class="col-6 col-md-4 col-lg-3"><img src="assets/Portfolio/pubmat/66.jpg" class="gallery-img img-fluid rounded" alt="Pubmat design" loading="lazy" /></div>
+            <div class="col-6 col-md-4 col-lg-3"><img src="assets/Portfolio/pubmat/67.jpg" class="gallery-img img-fluid rounded" alt="Pubmat design" loading="lazy" /></div>
+            <div class="col-6 col-md-4 col-lg-3"><img src="assets/Portfolio/pubmat/con bday.jpg" class="gallery-img img-fluid rounded" alt="Pubmat design" loading="lazy" /></div>
+            <div class="col-6 col-md-4 col-lg-3"><img src="assets/Portfolio/pubmat/LOGO POSTER.jpg" class="gallery-img img-fluid rounded" alt="Pubmat design" loading="lazy" /></div>
+            <div class="col-6 col-md-4 col-lg-3"><img src="assets/Portfolio/pubmat/Montenegro, Lance G..jpg" class="gallery-img img-fluid rounded" alt="Pubmat design" loading="lazy" /></div>
+            <div class="col-6 col-md-4 col-lg-3"><img src="assets/Portfolio/pubmat/Robotics Poster.jpg" class="gallery-img img-fluid rounded" alt="Pubmat design" loading="lazy" /></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Lanyard Gallery Modal -->
+  <div class="modal fade gallery-modal" id="lanyardGalleryModal" tabindex="-1" aria-labelledby="lanyardGalleryModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="lanyardGalleryModalLabel">Lanyard — Gallery</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p class="text-muted mb-4">High-quality, seamless lanyard patterns that complement your brand aesthetic. Perfect for team spirit and corporate visibility.</p>
+          <div class="row g-3">
+            <div class="col-6 col-md-4 col-lg-3"><img src="assets/Portfolio/lanyard/AFTECH LANYARD.png" class="gallery-img img-fluid rounded" alt="Lanyard design" loading="lazy" /></div>
+            <div class="col-6 col-md-4 col-lg-3"><img src="assets/Portfolio/lanyard/DICT lanyard 2.jpg" class="gallery-img img-fluid rounded" alt="Lanyard design" loading="lazy" /></div>
+            <div class="col-6 col-md-4 col-lg-3"><img src="assets/Portfolio/lanyard/ITCS LANYARD 1.jpg" class="gallery-img img-fluid rounded" alt="Lanyard design" loading="lazy" /></div>
+            <div class="col-6 col-md-4 col-lg-3"><img src="assets/Portfolio/lanyard/ITCS LANYARD 3.jpg" class="gallery-img img-fluid rounded" alt="Lanyard design" loading="lazy" /></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sublimation Uniforms Gallery Modal -->
+  <div class="modal fade gallery-modal" id="uniformsGalleryModal" tabindex="-1" aria-labelledby="uniformsGalleryModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="uniformsGalleryModalLabel">Sublimation Uniforms — Gallery</h5>
+          <button type="button" class="btn-close btn-close-red" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p class="text-muted mb-4">Custom full-sublimation uniforms that combine dynamic patterns with brand precision. Jerseys and polos that unite teams and elevate organizations.</p>
+          <div class="row g-3">
+            <div class="col-6 col-md-4 col-lg-3"><img src="assets/Portfolio/poloshirt/badminton.jpg" class="gallery-img img-fluid rounded" alt="Sublimation uniform" loading="lazy" /></div>
+            <div class="col-6 col-md-4 col-lg-3"><img src="assets/Portfolio/poloshirt/basketball.jpg" class="gallery-img img-fluid rounded" alt="Sublimation uniform" loading="lazy" /></div>
+            <div class="col-6 col-md-4 col-lg-3"><img src="assets/Portfolio/poloshirt/3.jpg" class="gallery-img img-fluid rounded" alt="Sublimation uniform" loading="lazy" /></div>
+            <div class="col-6 col-md-4 col-lg-3"><img src="assets/Portfolio/poloshirt/5.jpg" class="gallery-img img-fluid rounded" alt="Sublimation uniform" loading="lazy" /></div>
+            <div class="col-6 col-md-4 col-lg-3"><img src="assets/Portfolio/poloshirt/district 2.jpg" class="gallery-img img-fluid rounded" alt="Sublimation uniform" loading="lazy" /></div>
+            <div class="col-6 col-md-4 col-lg-3"><img src="assets/Portfolio/poloshirt/marketsite.jpg" class="gallery-img img-fluid rounded" alt="Sublimation uniform" loading="lazy" /></div>
+            <div class="col-6 col-md-4 col-lg-3"><img src="assets/Portfolio/poloshirt/OJT 2.jpg" class="gallery-img img-fluid rounded" alt="Sublimation uniform" loading="lazy" /></div>
+            <div class="col-6 col-md-4 col-lg-3"><img src="assets/Portfolio/poloshirt/OJT6.jpg" class="gallery-img img-fluid rounded" alt="Sublimation uniform" loading="lazy" /></div>
+            <div class="col-6 col-md-4 col-lg-3"><img src="assets/Portfolio/poloshirt/OJT7.jpg" class="gallery-img img-fluid rounded" alt="Sublimation uniform" loading="lazy" /></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Skills Section -->
+  <section id="skills" class="py-5 bg-light">
+    <div class="container">
+      <div class="row justify-content-center mb-4">
+        <div class="col-lg-8 text-center">
+          <h2 class="fw-bold mb-3">Skills</h2>
+          <p class="text-muted">
+            These are some of the technologies and tools I work with.
+          </p>
+        </div>
+      </div>
+      <div class="row g-3 justify-content-center">
+        <div class="col-6 col-md-3">
+          <div class="skill-pill">
+            <img src="assets/logos/Adobe_Photoshop_CC_icon.svg" alt="Photoshop" class="skill-logo" />
+            Photoshop
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="skill-pill">
+            <img src="assets/logos/Adobe_Illustrator_CC_icon.svg" alt="Illustrator" class="skill-logo" />
+            Illustrator
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="skill-pill">
+            <img src="assets/logos/Canva-icon-logo.svg" alt="Canva" class="skill-logo" />
+            Canva
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="skill-pill">
+            <img src="assets/logos/Figma-logo.svg" alt="Figma" class="skill-logo" />
+            Figma
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="skill-pill">Responsive Design</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-5">
+    <div class="container">
+      <div class="row justify-content-center mb-4">
+        <div class="col-lg-8 text-center">
+          <h2 class="fw-bold mb-3">Get In Touch</h2>
+          <p class="text-muted">
+            Have a project in mind or just want to say hi? Feel free to reach out.
+          </p>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-lg-6">
+          <!-- Simple contact info (you can switch to a real form if you have backend/email service) -->
+          <div class="card shadow-sm">
+            <div class="card-body">
+              <p class="mb-2"><strong>Email:</strong> <a href="mailto:lancesacrareg1@gmail.com">lancesacrareg1@gmail.com</a></p>
+              <p class="mb-2"><strong>Location:</strong> Butuan City, 8600, Agusan del Norte, Philippines</p>
+              <p class="mb-3"><strong>GitHub:</strong> <a href="https://github.com/glycooo" target="_blank" rel="noopener noreferrer">github.com/glycooo</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-3 bg-dark text-center text-muted">
+    <div class="container">
+      <small>Copyright © <span id="year"></span> Lance G. Montenegro. All rights reserved.</small>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS Bundle (includes Popper) -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"
+  ></script>
+
+  <!-- Small JS snippet to update the year -->
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Hero avatar badge - wiggle on single tap, flip on double tap (works on mobile)
+    var heroAvatar = document.getElementById('heroAvatar');
+    if (heroAvatar) {
+      var clickTimeout;
+      function wiggleBadge() {
+        heroAvatar.classList.remove('hero-avatar-wiggle', 'hero-avatar-flip');
+        heroAvatar.offsetWidth;
+        heroAvatar.classList.add('hero-avatar-wiggle');
+        setTimeout(function () { heroAvatar.classList.remove('hero-avatar-wiggle'); }, 600);
+      }
+      function flipBadge() {
+        heroAvatar.classList.remove('hero-avatar-wiggle', 'hero-avatar-flip');
+        heroAvatar.offsetWidth;
+        heroAvatar.classList.add('hero-avatar-flip');
+        setTimeout(function () { heroAvatar.classList.remove('hero-avatar-flip'); }, 800);
+      }
+      function handleTap() {
+        if (clickTimeout) {
+          clearTimeout(clickTimeout);
+          clickTimeout = null;
+          flipBadge();
+        } else {
+          clickTimeout = setTimeout(function () {
+            clickTimeout = null;
+            wiggleBadge();
+          }, 300);
+        }
+      }
+      heroAvatar.addEventListener('click', handleTap);
+      heroAvatar.addEventListener('touchend', function (e) {
+        e.preventDefault();
+        handleTap();
+      }, { passive: false });
+      heroAvatar.addEventListener('keydown', function (e) {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          handleTap();
+        }
+      });
+    }
+
+    // Award card click: pass image to modal
+    document.getElementById('awardModal').addEventListener('show.bs.modal', function (e) {
+      var trigger = e.relatedTarget;
+      var imgSrc = trigger ? trigger.getAttribute('data-img') : '';
+      document.getElementById('awardModalImg').src = imgSrc || '';
+    });
+
+    // Swipe down to close modals on mobile
+    function initSwipeToCloseModals() {
+      var modals = document.querySelectorAll('.modal');
+      modals.forEach(function (modal) {
+        var startY = 0;
+        modal.addEventListener('touchstart', function (e) {
+          startY = e.touches[0].clientY;
+        }, { passive: true });
+        modal.addEventListener('touchend', function (e) {
+          var endY = e.changedTouches[0].clientY;
+          if (endY - startY > 80 && modal.classList.contains('show')) {
+            var bsModal = bootstrap.Modal.getInstance(modal);
+            if (bsModal) bsModal.hide();
+          }
+        }, { passive: true });
+      });
+    }
+    if (typeof bootstrap !== 'undefined') initSwipeToCloseModals();
+  </script>
+</body>
+
+</html>
+
