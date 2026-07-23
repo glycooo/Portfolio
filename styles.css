@@ -356,3 +356,22 @@ footer {
   object-fit: cover;
 }
 
+.navbar-logo {
+  width: 60px;
+  height: auto;
+  object-fit: contain;
+}
+
+.navbar-brand {
+  font-size: 1.2rem;
+  color: #fff !important;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.navbar-brand:hover {
+  color: #fff !important;
+}
